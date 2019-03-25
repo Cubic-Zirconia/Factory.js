@@ -18,5 +18,9 @@
   "bugs": {
     "url": "https://github.com/Cubic-Zirconia/Factory.js/issues"
   },
-  "homepage": "https://github.com/Cubic-Zirconia/Factory.js#readme"
+  "homepage": "https://github.com/Cubic-Zirconia/Factory.js#readme",
+  "dependencies": {
+    "express": "^4.16.4",
+    "socket.io": "^2.2.0"
+  }
 }
