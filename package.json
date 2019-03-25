@@ -2,7 +2,7 @@
   "name": "factoryjs",
   "version": "0.0.1",
   "description": "A hackable factory game that runs in your web browser.",
-  "main": "factory.js",
+  "main": "factory.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -21,7 +21,8 @@
   "homepage": "https://github.com/Cubic-Zirconia/Factory.js#readme",
   "dependencies": {
     "express": "^4.16.4",
-    "socket.io": "^2.2.0"
+    "socket.io": "^2.2.0",
+    "typescript": "^3.3.4000"
   },
   "devDependencies": {
     "electron": "^4.1.1"
