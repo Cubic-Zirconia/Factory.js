@@ -3,9 +3,10 @@
   "version": "0.0.1",
   "description": "A hackable factory game that runs in your web browser.",
   "main": "main.ts",
-  "scripts": { 
+  "scripts": {
     "start": "electron .",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "tsc": "tsc"
   },
   "repository": {
     "type": "git",
@@ -21,6 +22,7 @@
   },
   "homepage": "https://github.com/Cubic-Zirconia/Factory.js#readme",
   "dependencies": {
+    "@types/pixi.js": "^4.8.6",
     "pixi.js": "^4.8.7",
     "typescript": "^3.3.4000"
   },
