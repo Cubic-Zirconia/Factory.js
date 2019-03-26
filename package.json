@@ -3,8 +3,8 @@
   "version": "0.0.1",
   "description": "A hackable factory game that runs in your web browser.",
   "main": "main.ts",
-  "scripts": {
-    "start":"electron .",
+  "scripts": { 
+    "start": "electron .",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
