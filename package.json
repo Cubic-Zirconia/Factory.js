@@ -21,6 +21,7 @@
   "homepage": "https://github.com/Cubic-Zirconia/Factory.js#readme",
   "dependencies": {
     "express": "^4.16.4",
+    "pixi.js": "^4.8.7",
     "socket.io": "^2.2.0",
     "typescript": "^3.3.4000"
   },
