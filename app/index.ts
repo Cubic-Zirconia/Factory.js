@@ -1,16 +1,24 @@
-import { app as ElectronApp, BrowserWindow } from 'electron';
+import { Application, Container, Text } from 'pixi.js';
 
-let mainWindow: Electron.BrowserWindow;
+const app: Application = new Application(800, 600, { backgroundColor : 0x000000 });
+app.view.style.position = 'absolute';
+app.view.style.display = 'block';
+document.body.appendChild(app.view);
 
-ElectronApp.on('ready', () => {
-	mainWindow = new BrowserWindow({ width: 800, height: 600, resizable: false });
-	mainWindow.loadURL(`file://${__dirname}/app/index.html`);
-	mainWindow.webContents.openDevTools();
-	mainWindow.on('closed', () => {
-		mainWindow = null;
-	});
-});
+const stage: Container = new Container();
 
-ElectronApp.on('window-all-closed', () => {
-	ElectronApp.quit();
-});
+const message: Text = new Text(
+	'nya!',
+	{ fontFamily: 'Arial', fontSize: 32, fill: 'white' }
+);
+
+message.position.set(app.view.width / 2 - message.width / 2, app.view.height / 2 - message.height / 2);
+stage.addChild(message);
+app.renderer.render(stage);
+
+function gameLoop(): void {
+	requestAnimationFrame(gameLoop);
+	app.renderer.render(stage);
+}
+
+gameLoop();
